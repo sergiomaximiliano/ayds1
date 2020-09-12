@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <head>
 	<title>Login V20</title>
@@ -30,36 +31,33 @@
 <body>
 	
 	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-b-160 p-t-50">
+		<div class="container-login100">		
+			<div class="wrap-login100 p-b-160 p-t-50">			
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-43">
-						Account Login
+						Seleccione la imagen que desea ver y presione Enter
 					</span>
 					
-					<div class="wrap-input100 rs1 validate-input" data-validate = "Username is required">
-						<input id="username" class="input100" type="text" name="username">
-						<span class="label-input100">Username</span>
-					</div>
-					
-					
-					<div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
-						<input id="password" class="input100" type="password" name="pass">
-						<span class="label-input100">Password</span>
-					</div>
-
+					<!-- <script async src="https://cse.google.com/cse.js?cx=626c55fda2d8d745a"></script> -->
+					<input style="display:none" type="text" id="inputQuery" placeholder="Ingrese la palabra a buscar"/>
+					<!-- <div class="gcse-search"></div> -->
+					<img style="display: none" id="imageContainer"/>
 					<div class="container-login100-form-btn">
-						<button id="loginButton" class="login100-form-btn">
-							Sign in
+						<button id="openButton" class="login100-form-btn">
+							Abrir
 						</button>
-					</div>
-					
-					<!-- <div class="text-center w-full p-t-23">
-						<a href="#" class="txt1">
-							Forgot password?
-						</a>
-					</div> -->
+					</div>		
+					<div class="container-login100-form-btn">
+						<button style="display:none" id="closeButton" class="login100-form-btn">
+							Cerrar
+						</button>
+					</div>				
 				</form>
+			</div>
+			<div id="closeSession">
+				<button id="logoutButton">
+					Salir
+				</button>
 			</div>
 		</div>
 	</div>
@@ -88,6 +86,9 @@
 	<script src="/assets/js/login.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
 
 </body>
 </html>
